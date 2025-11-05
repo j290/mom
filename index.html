@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi bizcocho 💖</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Pantalla de carga -->
+    <div class="pantalla-carga" id="pantalla-carga">
+        <div class="corazon">💖</div>
+        <h2>Cargando amor...</h2>
+    </div>
+    <script>
+        window.addEventListener('load', () => {
+            const carga = document.getElementById('pantalla-carga');
+            const botonMusica = document.getElementById('boton-musica');
+    
+            // Desaparece la pantalla de carga
+            setTimeout(() => {
+                carga.classList.add('desaparecer');
+    
+                // Luego muestra el botón de música
+                setTimeout(() => {
+                    botonMusica.classList.add('visible');
+                }, 1500);
+            }, 2500);
+        });
+    </script>
+    
+    <!-- Música con botón -->
+<div class="boton-musica" id="boton-musica">
+    💗 Haz clic para sentir la magia 💗
+</div>
+
+<audio id="musica" loop>
+    <source src="sparks.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio.
+</audio>
+
+<script>
+    const botonMusica = document.getElementById('boton-musica');
+    const musica = document.getElementById('musica');
+
+    botonMusica.addEventListener('click', () => {
+        musica.play();
+        botonMusica.classList.add('ocultar');
+    });
+</script>
+
+    <!-- Portada -->
+    <section class="portada">
+        <div class="overlay"></div>
+        <div class="contenido-portada">
+            <h1>Para mi bizcochito 💕</h1>
+            <p>Dos meses llenos de sonrisas, cariño y momentos que atesoro con mi alma</p>
+            <p class="firma">Con amor, tu novio ✨</p>
+        </div>
+    </section>
+
+    <!-- Sección 1: Nuestra sonrisa -->
+    <section class="seccion foto1">
+        <div class="texto">
+            <h2>Nuestra sonrisa 💫</h2>
+            <p>
+                Esa sonrisa sin labios pero con el alma,  
+                esa que me hizo saber que contigo, todo valdría la pena,
+                que a tu lado iba a estar seguro, que iba a poder ser yo
+                sin miedo a nada, que me hizo imaginar todo lo que 
+                compartiríamos. Esa sonrisa que me devuelve la vida y 
+                me llena con mares los ojos a felicidad pura.
+            </p>
+        </div>
+        <div class="imagen">
+            <img src="img/sonrisa.jpg" alt="Nosotros sonriendo">
+        </div>
+    </section>
+
+    <!-- Sección 2: El primer día -->
+    <section class="seccion foto2">
+        <div class="imagen">
+            <img src="img/primer-dia.jpg" alt="Primer día que nos vimos">
+        </div>
+        <div class="texto">
+            <h2>El primer día 🌷</h2>
+            <p>
+                Aquel primer día en que te vi, todo cambió.  
+                No sabía que estaba conociendo a la persona  
+                que haría mi mundo más cálido, a la que haría que todas
+                mis mañanas olieran a amor, a esperanza y felicidad. Esa personita
+                que a día de hoy es mi mundo entero, esa con la que quiero
+                hacer mi vida, visitar mil lugares y abandonar este mundo
+                habiendo entregado todo mi amor a ella.
+            </p>
+        </div>
+    </section>
+
+    <!-- Sección 3: Cuando te pedí ser mi novia -->
+    <section class="seccion foto3">
+        <div class="texto">
+            <h2>El día que dijiste “sí” 💍</h2>
+            <p>
+                Ese momento quedó grabado en mi corazón.  
+                Verte sonreír mientras corrías hacia mi, con tu uniforme,
+                tu hermoso cabello y tu hermoso cuerpo fue 
+                el comienzo del capítulo más lindo de mi vida, capítulo que deseo
+                dure todo lo que queda del libro, y que haré todo lo posible para que así sea.
+
+                Te amo mi amor 💖
+            </p>
+        </div>
+        <div class="imagen">
+            <img src="img/novios.jpg" alt="Día que fuimos novios">
+        </div>
+    </section>
+
+    <!-- Sección 4: Nuestro primer mes -->
+    <section class="seccion foto4">
+        <div class="imagen">
+            <img src="img/primer-mes.jpg" alt="Primer mes juntos">
+        </div>
+        <div class="texto">
+            <h2>Un mes... y ahora dos 🕊️</h2>
+            <p>
+                Un mes aprendiendo a amarte más,  
+                dos meses soñando contigo,  
+                62 noches platicando de ti con la Luna,
+                1488 horas hablando conmigo mismo de ti,
+                89280 minutos en los que has estado en mi mente,
+                y una vida entera que quiero compartir a tu lado.
+            </p>
+        </div>
+    </section>
+
+    <!-- Sección 5: Cosas que amo de ti -->
+    <section class="seccion foto5">
+        <div class="texto">
+            <h2>Cosas que me encantan de ti 💌</h2>
+            <ul>
+                <li>Tu risa cuando intentas no reírte.</li>
+                <li>Cómo tus ojos se iluminan cuando hablas de lo que amas.</li>
+                <li>La paz que siento cuando me abrazas.</li>
+                <li>Tu forma de mirar el mundo, tan única y dulce.</li>
+                <li>Y sobre todo... que seas tú, mi bizcocho. 💖</li>
+            </ul>
+        </div>
+        <div class="imagen">
+            <img src="img/ella.jpg" alt="Mi bizcocho">
+        </div>
+    </section>
+
+    <!-- Cierre romántico -->
+    <section class="final">
+        <h2>Te amo, mi bizcocho 💞</h2>
+        <p>
+            Mi bizcocho,
+no sé si alguna vez te lo he dicho con todas las letras, pero estos dos meses contigo han sido una de las etapas más bonitas que he vivido. Contigo aprendí que el amor no siempre se trata de cosas grandes, sino de los pequeños detalles, las miradas que lo dicen todo, los abrazos que calman, y esas risas tontas que solo tú me sabes sacar.
+
+A veces pienso que no soy suficiente, que podría hacer más, ser más, darte más… pero cada vez que te veo, cada vez que me sonríes con esos ojitos que parecen luz, me doy cuenta de que lo que más importa es lo que construimos juntos, paso a paso, con paciencia, cariño y verdad.
+
+Recuerdo el primer día que te vi, y todavía me da un vuelco el corazón. Recuerdo cuando te invité a comer, cuando te llevé flores, cuando bailabas con esa pasión que te hace brillar más que cualquier estrella. Y sobre todo, recuerdo el día en que dijiste que sí, el día en que empezamos a escribir esta historia.
+
+Me encantas en todas tus versiones: cuando estás feliz, cuando te enojas, cuando te concentras tanto que el mundo se te olvida. Me encanta cómo hablas, cómo ríes, cómo sueñas. Y aunque a veces no lo diga tanto como debería, cada día me siento más afortunado por tenerte.
+
+Gracias por dejarme ser parte de tu vida, por confiar en mí, por enseñarme lo que es querer de verdad. Prometo seguir intentándolo, seguir cuidando de ti, seguir amándote de todas las formas posibles.
+
+Te amo, mi bizcocho.
+Y si este pequeño rincón digital sirve para recordarte lo mucho que te amo, entonces valió cada segundo que pasé haciéndolo. 💖
+        </p>
+        <div class="corazones"></div>
+    </section>
+
+    <!-- Pie -->
+    <footer>
+        <p>Hecho con amor por mí, para ti 💫</p>
+    </footer>
+
+    <!-- Script: Desaparece la pantalla de carga -->
+    <script>
+        window.addEventListener('load', () => {
+            const carga = document.getElementById('pantalla-carga');
+            setTimeout(() => {
+                carga.classList.add('desaparecer');
+            }, 2500);
+        });
+    </script>
+</body>
+</html>
